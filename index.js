@@ -1,8 +1,10 @@
 
 const app = require('./app')
 
-const PORT = 8080;
+const dotenv = require('dotenv')
+dotenv.config({path:('./confiq.env')})
 
-app.listen(PORT,()=>{
-   console.log(`Server is listening on port : localhost:${PORT}`)
+
+app.listen(process.env.RUNNING_PORT,()=>{
+   console.log(`Server is listening on port 8080`)
 });
