@@ -72,7 +72,7 @@ app.use(mongoSanitize())
 app.use(limiter)
 
 
-
+// connetct from routes folder
 
 app.use('/api' , router)
 
